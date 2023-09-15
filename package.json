@@ -21,6 +21,7 @@
     "@angular/platform-browser": "^16.1.0-rc.0",
     "@angular/platform-browser-dynamic": "^16.1.0-rc.0",
     "@angular/router": "^16.1.0-rc.0",
+    "@sentry/angular-ivy": "^7.69.0",
     "angular-in-memory-web-api": "~0.16.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
