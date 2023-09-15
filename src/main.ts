@@ -4,13 +4,16 @@ import * as Sentry from '@sentry/angular-ivy';
 import { AppModule } from './app/app.module';
 
 Sentry.init({
-  dsn: 'https://examplePublicKey@o0.ingest.sentry.io/0',
+  dsn: 'https://03479638cd25a324122e1c5642d155d6@o4505883359313920.ingest.sentry.io/4505883373076480',
   integrations: [
     // Registers and configures the Tracing integration,
     // which automatically instruments your application to monitor its
     // performance, including custom Angular routing instrumentation
     new Sentry.BrowserTracing({
       routingInstrumentation: Sentry.routingInstrumentation,
+      tracePropagationTargets: [
+        'https://x4kcxk-2b4n--4200--5291dfc1.local-credentialless.webcontainer.io',
+      ],
     }),
     // Registers the Replay integration,
     // which automatically captures Session Replays
@@ -27,7 +30,7 @@ Sentry.init({
 
   // Capture Replay for 10% of all sessions,
   // plus for 100% of sessions with an error
-  replaysSessionSampleRate: 0.1,
+  //  replaysSessionSampleRate: 1.0,
   replaysOnErrorSampleRate: 1.0,
 });
 
