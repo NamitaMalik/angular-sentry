@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TopBarComponent {
   onCheckout() {
-    console.log('1');
     throw new Error('Sentry Test Error');
   }
 }
